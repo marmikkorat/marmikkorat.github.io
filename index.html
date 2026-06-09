@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <title>Marmik Korat | Portfolio</title>
+
+  <!-- FIXED LINKS -->
   <link rel="stylesheet" href="style.css">
 
   <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
 
   <!-- Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" rel="stylesheet">
 </head>
 
 <body>
@@ -22,7 +24,7 @@
     <ul class="pf-nav-links">
       <li><a href="#">About</a></li>
       <li><a href="#">Experience</a></li>
-      <li><a href="#">Projects</a></li>
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#">Skills</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
@@ -40,7 +42,7 @@
       </p>
 
       <div class="pf-btn-row">
-        <a href="resume.pdf" target="_blank" class="pf-btn-primary">Download Resume</a>
+        <a href="resume.pdf" class="pf-btn-primary">Download Resume</a>
         <a href="#projects" class="pf-btn-ghost">View Projects</a>
       </div>
     </div>
@@ -48,109 +50,54 @@
     <!-- GAUGE -->
     <div class="pf-gauge-wrap">
       <svg width="200" height="200" viewBox="0 0 200 200">
-        <circle cx="100" cy="100" r="80" class="pf-bg-circle"/>
-        <circle cx="100" cy="100" r="80" class="pf-progress-bg"/>
-        <circle cx="100" cy="100" r="80" id="mainArc" class="pf-progress"/>
+        <circle cx="100" cy="100" r="80" stroke="#222" stroke-width="12" fill="none"/>
+        <circle id="mainArc" cx="100" cy="100" r="80"
+          stroke="#F5A623" stroke-width="12" fill="none"
+          stroke-dasharray="377"
+          stroke-dashoffset="220"
+          transform="rotate(-90 100 100)"/>
 
-        <text x="100" y="90" text-anchor="middle" class="pf-gauge-main">1.2</text>
-        <text x="100" y="108" text-anchor="middle" class="pf-gauge-subtext">GW current</text>
-        <text x="100" y="126" text-anchor="middle" class="pf-gauge-growth">→ 3 GW</text>
+        <text x="100" y="90" text-anchor="middle" fill="#F5A623" font-size="28">1.2</text>
+        <text x="100" y="110" text-anchor="middle" fill="#aaa" font-size="12">GW current</text>
       </svg>
-      <div class="pf-gauge-sub">
-        Manufacturing capacity under leadership
-      </div>
     </div>
   </section>
 
   <!-- STATS -->
   <div class="pf-stats">
-    <div class="pf-stat"><div class="pf-stat-num">10+</div><div class="pf-stat-label">Years Experience</div></div>
-    <div class="pf-stat"><div class="pf-stat-num">400+</div><div class="pf-stat-label">Workforce Led</div></div>
-    <div class="pf-stat"><div class="pf-stat-num">3 GW</div><div class="pf-stat-label">Capacity Expansion</div></div>
-  </div>
-
-  <!-- EXPERIENCE -->
-  <section class="pf-section">
-    <div class="pf-section-title">Experience</div>
-
-    <div class="pf-timeline">
-
-      <div class="pf-titem">
-        <div class="pf-titem-role">Manager</div>
-        <div class="pf-titem-company">ACME Solar</div>
-        <div class="pf-titem-desc">
-          Leading 1.2 GW manufacturing with focus on OEE, quality, and 3 GW expansion strategy.
-        </div>
-      </div>
-
-      <div class="pf-titem">
-        <div class="pf-titem-role">Associate Manager</div>
-        <div class="pf-titem-company">Adani Solar</div>
-        <div class="pf-titem-desc">
-          Led 400+ workforce and implemented Lean Six Sigma to improve throughput.
-        </div>
-      </div>
-
-      <div class="pf-titem">
-        <div class="pf-titem-role">Deputy Manager</div>
-        <div class="pf-titem-company">Adani Solar</div>
-        <div class="pf-titem-desc">
-          Commissioned manufacturing plant and scaled production efficiency.
-        </div>
-      </div>
-
+    <div class="pf-stat">
+      <div class="pf-stat-num">10+</div>
+      <div>Years Experience</div>
     </div>
-  </section>
+    <div class="pf-stat">
+      <div class="pf-stat-num">400+</div>
+      <div>Workforce Led</div>
+    </div>
+    <div class="pf-stat">
+      <div class="pf-stat-num">3 GW</div>
+      <div>Capacity Expansion</div>
+    </div>
+  </div>
 
   <!-- PROJECTS -->
   <section class="pf-section" id="projects">
-    <div class="pf-section-title">Projects</div>
+    <h2>Projects</h2>
 
     <div class="pf-projects">
-
       <div class="pf-card">
-        <div class="pf-card-icon"><i class="ti ti-chart-bar"></i></div>
         <h3>MIS Dashboard</h3>
-        <p>Tracked defects, OEE, and production trends for decision making.</p>
-        <div class="pf-metric">↓ B%</div>
-        <div class="pf-metric-label">Defect reduction</div>
+        <p>Tracked production and defects</p>
       </div>
 
       <div class="pf-card">
-        <div class="pf-card-icon"><i class="ti ti-robot"></i></div>
         <h3>SAP Automation</h3>
-        <p>Automated SAP PM tasks using Excel VBA.</p>
-        <div class="pf-metric">VBA + SAP</div>
-        <div class="pf-metric-label">Automation stack</div>
+        <p>Automated workflows using VBA</p>
       </div>
-
     </div>
   </section>
-
-  <!-- SKILLS -->
-  <section class="pf-section">
-    <div class="pf-section-title">Skills</div>
-
-    <div class="pf-skills-grid">
-      <span class="pf-skill-chip pf-skill-ops">Lean Manufacturing</span>
-      <span class="pf-skill-chip pf-skill-ops">OEE Optimization</span>
-      <span class="pf-skill-chip pf-skill-data">MIS Reporting</span>
-      <span class="pf-skill-chip pf-skill-tech">SAP PM</span>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <div class="pf-contact">
-    <div class="pf-contact-left">
-      <h2>Let's connect</h2>
-      <p>marmikkorat@gmail.com · LinkedIn</p>
-    </div>
-    <button class="pf-btn-primary">Contact Me</button>
-  </div>
 
 </div>
 
 <script src="script.js"></script>
 </body>
 </html>
-``
