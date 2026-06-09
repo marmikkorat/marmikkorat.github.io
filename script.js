@@ -1,30 +1,17 @@
-// Smooth Scroll
-document.querySelectorAll("a[href^='#']").forEach(anchor => {
-    anchor.addEventListener("click", function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute("href"))
-            .scrollIntoView({
-                behavior: "smooth"
-            });
-    });
-});
-
-
-// Fade animation
-const sections = document.querySelectorAll("section");
+const cards = document.querySelectorAll(".card");
 
 const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = 1;
-            entry.target.style.transform = "translateY(0)";
-        }
-    });
-}, { threshold: 0.1 });
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.style.opacity = 1;
+      entry.target.style.transform = "translateY(0)";
+    }
+  });
+}, { threshold: 0.15 });
 
-sections.forEach(section => {
-    section.style.opacity = 0;
-    section.style.transform = "translateY(30px)";
-    section.style.transition = "all 0.6s ease";
-    observer.observe(section);
+cards.forEach(card => {
+  card.style.opacity = 0;
+  card.style.transform = "translateY(50px)";
+  card.style.transition = "all 0.6s ease";
+  observer.observe(card);
 });
