@@ -1,8 +1,8 @@
 body {
   margin: 0;
-  background: #0A0F1E;
-  color: #F0EDE6;
   font-family: 'Inter', sans-serif;
+  background: #0A0F1E;
+  color: white;
 }
 
 .pf-root {
@@ -22,20 +22,20 @@ body {
 }
 
 .pf-nav-links {
+  list-style: none;
   display: flex;
   gap: 20px;
-  list-style: none;
 }
 
 .pf-nav-links a {
-  color: rgba(240,237,230,0.6);
   text-decoration: none;
+  color: #ccc;
 }
 
 .pf-hero {
-  padding: 50px 20px;
   display: grid;
   grid-template-columns: 1fr 250px;
+  padding: 50px 20px;
 }
 
 .pf-hero h1 span {
@@ -45,17 +45,23 @@ body {
 .pf-btn-primary {
   background: #F5A623;
   padding: 10px 20px;
+  text-decoration: none;
   color: black;
-  border-radius: 6px;
+  border-radius: 5px;
+}
+
+.pf-btn-ghost {
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: white;
+  margin-left: 10px;
 }
 
 .pf-stats {
   display: grid;
-  grid-template-columns: repeat(3,1fr);
-}
-
-.pf-stat {
-  padding: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
 }
 
 .pf-stat-num {
@@ -63,13 +69,9 @@ body {
   font-size: 24px;
 }
 
-.pf-section {
-  padding: 40px 20px;
-}
-
 .pf-projects {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 15px;
 }
 
@@ -78,24 +80,4 @@ body {
   padding: 20px;
   border-radius: 10px;
 }
-
-.pf-skill-chip {
-  padding: 7px 12px;
-  border-radius: 5px;
-  border: 1px solid;
-}
-
-.pf-skill-ops {
-  border-color: #F5A623;
-  color: #F5A623;
-}
-
-.pf-skill-data {
-  border-color: #4BBDD4;
-  color: #4BBDD4;
-}
-
-.pf-skill-tech {
-  border-color: #52C48A;
-  color: #52C48A;
-}
+``
