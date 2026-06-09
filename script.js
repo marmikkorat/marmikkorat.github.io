@@ -1,14 +1,15 @@
-const arc = document.getElementById('mainArc');
+const arc = document.getElementById("mainArc");
 
 let progress = 220;
-const target = 40;
+const target = 50;
 
-function animateArc() {
-  if (progress > target) {
-    progress -= 5;
+function animate() {
+  if(progress > target){
+    progress -= 2;
     arc.style.strokeDashoffset = progress;
-    requestAnimationFrame(animateArc);
+    requestAnimationFrame(animate);
   }
 }
 
-setTimeout(animateArc, 400);
+animate();
+``
