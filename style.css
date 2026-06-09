@@ -1,110 +1,101 @@
-
-:root {
-  --primary: #1f3c88;
-  --bg: #ffffff;
-  --text: #333;
-}
-
-.dark {
-  --bg: #0f172a;
-  --text: #f1f5f9;
-}
-
-/* Base */
 body {
   margin: 0;
-  font-family: Arial;
-  background: var(--bg);
-  color: var(--text);
-  transition: 0.3s;
+  background: #0A0F1E;
+  color: #F0EDE6;
+  font-family: 'Inter', sans-serif;
 }
 
-/* Navbar */
-nav {
-  display: flex;
-  justify-content: space-between;
-  padding: 15px 50px;
-  background: var(--primary);
-  color: white;
-  position: sticky;
-  top: 0;
-}
-
-nav ul {
-  display: flex;
-  list-style: none;
-}
-
-nav li {
-  margin-left: 20px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-}
-
-/* Hero */
-header {
-  text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(135deg, #1f3c88, #39a2db);
-  color: white;
-}
-
-/* Buttons */
-.btn {
-  background: white;
-  color: #1f3c88;
-  padding: 10px 20px;
-  margin: 10px;
-  border-radius: 5px;
-  text-decoration: none;
-}
-
-.btn-outline {
-  border: 2px solid white;
-  color: white;
-  padding: 10px 20px;
-  margin: 10px;
-  text-decoration: none;
-}
-
-/* Sections */
-section {
-  padding: 60px;
-  max-width: 900px;
+.pf-root {
+  max-width: 1100px;
   margin: auto;
 }
 
-/* Cards */
-.card {
-  background: var(--bg);
+.pf-nav {
+  display: flex;
+  justify-content: space-between;
   padding: 20px;
-  margin: 15px 0;
+}
+
+.pf-logo {
+  color: #F5A623;
+  font-weight: bold;
+}
+
+.pf-nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.pf-nav-links a {
+  color: rgba(240,237,230,0.6);
+  text-decoration: none;
+}
+
+.pf-hero {
+  padding: 50px 20px;
+  display: grid;
+  grid-template-columns: 1fr 250px;
+}
+
+.pf-hero h1 span {
+  color: #F5A623;
+}
+
+.pf-btn-primary {
+  background: #F5A623;
+  padding: 10px 20px;
+  color: black;
+  border-radius: 6px;
+}
+
+.pf-stats {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+}
+
+.pf-stat {
+  padding: 20px;
+}
+
+.pf-stat-num {
+  color: #F5A623;
+  font-size: 24px;
+}
+
+.pf-section {
+  padding: 40px 20px;
+}
+
+.pf-projects {
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 15px;
+}
+
+.pf-card {
+  background: #1C2540;
+  padding: 20px;
   border-radius: 10px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
 }
 
-.card:hover {
-  transform: scale(1.03);
-}
-
-/* Skills */
-.skills span {
-  background: var(--primary);
-  color: white;
-  padding: 10px;
-  margin: 5px;
-  display: inline-block;
+.pf-skill-chip {
+  padding: 7px 12px;
   border-radius: 5px;
+  border: 1px solid;
 }
 
-/* Footer */
-footer {
-  text-align: center;
-  padding: 20px;
-  background: var(--primary);
-  color: white;
+.pf-skill-ops {
+  border-color: #F5A623;
+  color: #F5A623;
+}
+
+.pf-skill-data {
+  border-color: #4BBDD4;
+  color: #4BBDD4;
+}
+
+.pf-skill-tech {
+  border-color: #52C48A;
+  color: #52C48A;
 }
