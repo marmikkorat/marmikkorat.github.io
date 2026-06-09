@@ -1,17 +1,31 @@
+
+:root {
+  --primary: #1f3c88;
+  --bg: #ffffff;
+  --text: #333;
+}
+
+.dark {
+  --bg: #0f172a;
+  --text: #f1f5f9;
+}
+
+/* Base */
 body {
   margin: 0;
   font-family: Arial;
-  scroll-behavior: smooth;
-  background: #f4f7fb;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
 }
 
-/* ✅ Navbar */
+/* Navbar */
 nav {
   display: flex;
   justify-content: space-between;
-  background: #1f3c88;
-  color: white;
   padding: 15px 50px;
+  background: var(--primary);
+  color: white;
   position: sticky;
   top: 0;
 }
@@ -21,7 +35,7 @@ nav ul {
   list-style: none;
 }
 
-nav ul li {
+nav li {
   margin-left: 20px;
 }
 
@@ -30,7 +44,7 @@ nav a {
   text-decoration: none;
 }
 
-/* ✅ Hero */
+/* Hero */
 header {
   text-align: center;
   padding: 100px 20px;
@@ -38,50 +52,59 @@ header {
   color: white;
 }
 
+/* Buttons */
 .btn {
-  display: inline-block;
-  margin-top: 20px;
-  padding: 10px 20px;
   background: white;
   color: #1f3c88;
+  padding: 10px 20px;
+  margin: 10px;
   border-radius: 5px;
   text-decoration: none;
 }
 
-/* ✅ Sections */
+.btn-outline {
+  border: 2px solid white;
+  color: white;
+  padding: 10px 20px;
+  margin: 10px;
+  text-decoration: none;
+}
+
+/* Sections */
 section {
   padding: 60px;
   max-width: 900px;
   margin: auto;
 }
 
-/* ✅ Cards */
+/* Cards */
 .card {
-  background: white;
+  background: var(--bg);
   padding: 20px;
   margin: 15px 0;
   border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
   transition: transform 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: scale(1.03);
 }
 
-/* ✅ Skills */
+/* Skills */
 .skills span {
-  display: inline-block;
-  background: #1f3c88;
+  background: var(--primary);
   color: white;
   padding: 10px;
   margin: 5px;
+  display: inline-block;
   border-radius: 5px;
 }
 
-/* ✅ Footer */
+/* Footer */
 footer {
   text-align: center;
   padding: 20px;
-  background: #1f3c88;
+  background: var(--primary);
   color: white;
 }
