@@ -1,108 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Marmik Korat | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<title>Marmik Korat | Portfolio</title>
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- Header -->
+<!-- ✅ Navbar -->
+<nav>
+  <h2>Marmik</h2>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <button onclick="toggleTheme()">🌙</button>
+</nav>
+
+<!-- ✅ Hero -->
 <header>
   <h1>Marmik Korat</h1>
-  <p>Manager | Solar Manufacturing | Operations Leader</p>
+  <p id="typing"></p>
+
+  <div class="buttons">
+    <a href="resume.pdf" class="btn" download>Download Resume</a>
+    <a href="#contact" class="btn-outline">Contact Me</a>
+  </div>
 </header>
 
-<!-- About -->
-<section>
+<!-- ✅ About -->
+<section id="about">
   <h2>About Me</h2>
   <p>
-    I am a results-driven Manager with 10+ years of experience in solar module
-    manufacturing, operations management, and process optimization. I specialize
-    in capacity scaling, lean manufacturing, and driving operational excellence.
+    Strategic Operations Manager with 10+ years of experience in
+    solar manufacturing, leading large-scale production lines and
+    driving operational excellence using Lean & data analytics.
   </p>
 </section>
 
-<!-- Experience -->
-<section>
-  <h2>Professional Experience</h2>
+<!-- ✅ Experience -->
+<section id="experience">
+  <h2>Experience</h2>
 
   <div class="card">
-    <h3>Manager – ACME Solar (2025 - Present)</h3>
-    <ul>
-      <li>Leading operations of a 1.2 GW manufacturing line</li>
-      <li>Driving 3 GW plant expansion project</li>
-      <li>Improving capacity and efficiency</li>
-    </ul>
+    <h3>Manager – ACME Solar</h3>
+    <p>Leading 1.2 GW manufacturing and 3 GW expansion.</p>
   </div>
 
   <div class="card">
-    <h3>Associate Manager – Adani Solar (2024 - 2025)</h3>
-    <ul>
-      <li>Managed 1 GW production line</li>
-      <li>Led team of 400+ people</li>
-      <li>Implemented Lean Six Sigma projects</li>
-    </ul>
+    <h3>Associate Manager – Adani Solar</h3>
+    <p>Led 400+ workforce and Lean Six Sigma initiatives.</p>
   </div>
 
   <div class="card">
-    <h3>Deputy Manager – Adani Solar (2021 - 2024)</h3>
-    <ul>
-      <li>Commissioned 2 GW manufacturing plant</li>
-      <li>Implemented Kaizen & process improvements</li>
-      <li>Performed root cause analysis for efficiency</li>
-    </ul>
+    <h3>Deputy Manager – Adani Solar</h3>
+    <p>Commissioned multi-GW plant and optimized processes.</p>
   </div>
 
 </section>
 
-<!-- Key Achievements -->
-<section>
-  <h2>Achievements</h2>
-  <div class="card">
-    <ul>
-      <li>🏆 Green Urja & Energy Efficiency Award (2025)</li>
-      <li>🏆 4x Best Team Award (Cost Saving & Performance)</li>
-      <li>🏆 Golden Award – Kaizen (NQCFI)</li>
-    </ul>
-  </div>
-</section>
-
-<!-- Skills -->
-<section>
+<!-- ✅ Skills -->
+<section id="skills">
   <h2>Skills</h2>
-  <div class="card">
-    <p>
-      Operations Management | Lean Manufacturing | Project Management |
-      Data Analysis | Quality Management | Process Optimization
-    </p>
+  <div class="skills">
+    <span>Operations</span>
+    <span>Lean Manufacturing</span>
+    <span>Leadership</span>
+    <span>Data Analysis</span>
+    <span>Process Improvement</span>
   </div>
 </section>
 
-<!-- Education -->
-<section>
-  <h2>Education</h2>
-  <div class="card">
-    <p>B.E. Electrical Engineering</p>
-    <p>IIM Udaipur – Executive Program</p>
-  </div>
-</section>
-
-<!-- Contact -->
-<section>
+<!-- ✅ Contact -->
+<section id="contact">
   <h2>Contact</h2>
-  <div class="card">
-    <p>📧 marmikkorat@gmail.com</p>
-    <p>📱 +91 96244 62184</p>
-    <p>🔗 LinkedIn: linkedin.com/imarmik-korat</p>
-  </div>
+  <p>Email: marmikkorat@gmail.com</p>
+  <p>Phone: +91 96244 62184</p>
+  <p>LinkedIn: linkedin.com/imarmik-korat</p>
 </section>
 
-<!-- Footer -->
+<!-- ✅ Footer -->
 <footer>
   <p>© 2026 Marmik Korat</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
